@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catálogo académico de experiencias turísticas en Riviera Maya.">
+    <title>Reservas Riviera Maya</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <header class="encabezado">
+        <div class="encabezado-contenido">
+            <p class="etiqueta-superior">DESCUBRE · EXPLORA · DISFRUTA</p>
+            <h1>Reservas Riviera Maya</h1>
+            <p>Encuentra tu próxima experiencia y prepara tu reservación.</p>
+        </div>
+    </header>
+
+    <main class="contenedor">
+        <section class="intro">
+            <div>
+                <p class="sobre-titulo">CATÁLOGO TURÍSTICO</p>
+                <h2>Experiencias para descubrir</h2>
+                <p>Busca una actividad, elige cuántas personas asistirán y agrégala a tu reservación.</p>
+            </div>
+            <div class="contador-catalogo"><strong id="contadorExperiencias">0</strong><span>experiencias</span></div>
+        </section>
+
+        <section class="panel filtros" aria-label="Filtros del catálogo">
+            <label class="campo campo-busqueda">Buscar por nombre
+                <input id="buscador" type="search" placeholder="Ej. kayak, cenote..." autocomplete="off">
+            </label>
+            <label class="campo">Categoría
+                <select id="filtroCategoria">
+                    <option value="todas">Todas las categorías</option>
+                    <option value="naturaleza">Naturaleza</option>
+                    <option value="cultura">Cultura</option>
+                    <option value="aventura">Aventura</option>
+                    <option value="gastronomia">Gastronomía</option>
+                    <option value="mar">Mar y arrecife</option>
+                </select>
+            </label>
+            <label class="campo">Precio máximo
+                <select id="precioMaximo">
+                    <option value="todos">Cualquier precio</option>
+                    <option value="400">Hasta $400</option>
+                    <option value="600">Hasta $600</option>
+                    <option value="800">Hasta $800</option>
+                    <option value="1000">Hasta $1,000</option>
+                </select>
+            </label>
+            <label class="campo">Ordenar por precio
+                <select id="ordenPrecio">
+                    <option value="normal">Orden original</option>
+                    <option value="ascendente">Menor precio</option>
+                    <option value="descendente">Mayor precio</option>
+                </select>
+            </label>
+        </section>
+
+        <p id="estado" class="estado" role="status" aria-live="polite">Cargando experiencias...</p>
+        <section id="catalogo" class="catalogo" aria-label="Experiencias disponibles"></section>
+
+        <section class="panel resumen" aria-labelledby="tituloReservacion">
+            <div class="resumen-cabecera">
+                <div>
+                    <p class="sobre-titulo">TU SELECCIÓN</p>
+                    <h2 id="tituloReservacion">Mi reservación</h2>
+                </div>
+                <span class="etiqueta-reserva" id="contadorReservas">0 actividades</span>
+            </div>
+            <div id="mensajeReserva" class="mensaje" role="status" aria-live="polite"></div>
+            <div id="listaReservas">
+                <p class="vacio">Todavía no has seleccionado experiencias.</p>
+            </div>
+            <div class="resumen-pie">
+                <div class="datos-totales">
+                    <p>Personas reservadas: <strong id="totalPersonas">0</strong></p>
+                    <p class="total">Total estimado: <span id="total">$0 MXN</span></p>
+                </div>
+                <button id="vaciarReservacion" class="btn-secundario" type="button" disabled>Vaciar reservación</button>
+            </div>
+            <p class="nota">Prototipo académico: las reservaciones se mantienen en memoria y se borran al actualizar la
+                página.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Reservas Riviera Maya · Proyecto académico de Frontend</p>
+    </footer>
+</body>
+
+</html>
