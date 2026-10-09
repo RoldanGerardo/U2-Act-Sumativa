@@ -1,0 +1,82 @@
+[
+{
+    "id": 1,
+    "nombre": "Cenote Azul",
+    "categoria": "naturaleza",
+    "precio": 350,
+    "cupo": 15,
+    "icono": "🌊"
+},
+{
+    "id": 2,
+    "nombre": "Zona arqueológica",
+    "categoria": "cultura",
+    "precio": 480,
+    "cupo": 20,
+    "icono": "🗿"
+},
+{
+    "id": 3,
+    "nombre": "Ruta en tirolesa",
+    "categoria": "aventura",
+    "precio": 750,
+    "cupo": 10,
+    "icono": "🌴"
+},
+{
+    "id": 4,
+    "nombre": "Kayak en manglar",
+    "categoria": "aventura",
+    "precio": 680,
+    "cupo": 8,
+    "icono": "🛶"
+},
+{
+    "id": 5,
+    "nombre": "Ruta de sabores mayas",
+    "categoria": "gastronomia",
+    "precio": 620,
+    "cupo": 12,
+    "icono": "🍲"
+},
+{
+    "id": 6,
+    "nombre": "Santuario de tortugas",
+    "categoria": "naturaleza",
+    "precio": 420,
+    "cupo": 18,
+    "icono": "🐢"
+},
+{
+    "id": 7,
+    "nombre": "Paseo en catamarán",
+    "categoria": "mar",
+    "precio": 890,
+    "cupo": 14,
+    "icono": "⛵"
+},
+{
+    "id": 8,
+    "nombre": "Snorkel en arrecife",
+    "categoria": "mar",
+    "precio": 720,
+    "cupo": 10,
+    "icono": "🐠"
+},
+{
+    "id": 9,
+    "nombre": "Tour en bicicleta",
+    "categoria": "aventura",
+    "precio": 390,
+    "cupo": 9,
+    "icono": "🚲"
+},
+{
+    "id": 10,
+    "nombre": "Taller de artesanías",
+    "categoria": "cultura",
+    "precio": 300,
+    "cupo": 12,
+    "icono": "🎨"
+}
+]
